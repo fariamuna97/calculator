@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>calculator</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="calclutor text-center">
+			<input type="text" id="display"> <br>
+			<button onclick="one()">1</button>
+			<button onclick="two()">2</button>
+			<button onclick="thr()">3</button>
+			<button class="nmbr" onclick="add()">+</button>
+			<button onclick="fou()">4</button>
+			<button onclick="fiv()">5</button>
+			<button onclick="six()">6</button>
+			<button class="nmbr" onclick="sub()">-</button>
+			<button onclick="sev()">7</button>
+			<button onclick="eig()">8</button>
+			<button onclick="nin()">9</button>
+			<button class="nmbr" onclick="mul()">x</button>
+			<button class="nmbr" onclick="clr()">c</button>
+			<button onclick="zer()">0</button>
+			<button class="nmbr" onclick="dev()">/</button>
+			<button class="nmbr" onclick="equ()">=</button>
+			
+		</div>
+	</div>
+
+
+
+	<script>
+
+		var Display = document.getElementById("display");
+		
+
+		function one(){
+			Display.value +=1;
+		}
+
+		function two(){
+			Display.value +=2;
+		}
+
+		function thr(){
+			Display.value +=3;
+		}
+
+		function fou(){
+			Display.value +=4;
+		}
+
+		function fiv(){
+			Display.value +=5;
+		}
+
+		function six(){
+			Display.value +=6;
+		}
+
+		function sev(){
+			Display.value +=7;
+		}
+
+		function eig(){
+			Display.value +=8;
+		}
+
+		function nin(){
+			Display.value +=9;
+		}
+
+		function zer(){
+			Display.value +=0;
+		}
+
+		function add(){
+			Display.value +="+" ;
+		}
+
+		function sub(){
+			Display.value +="-" ;
+		}
+		function mul(){
+			Display.value +="*" ;
+		}
+		function dev(){
+			Display.value +="/" ;
+		}
+		function equ(){
+			var calclute = eval (Display.value);
+			Display.value = calclute ;
+		}
+		function clr(){
+			Display.value ="" ;
+		}
+
+
+	</script>
+
+</body>
+</html>
